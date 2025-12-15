@@ -1,0 +1,19 @@
+/* Minimal extra CSS to replace heavy extra.css in critical loading path.
+   Keep visuals (shadows) but avoid thousands of unused rules. */
+.hero, .card, .feature, .cta{box-shadow:0 2px 4px rgba(0,0,0,.14),0 8px 24px rgba(0,0,0,.22),0 24px 60px rgba(0,0,0,.18)}
+.extra-bright{filter:brightness(1.05)}
+
+/* Réserver l'espace pour les images et éviter le CLS */
+.card img {
+   width: 100%;
+   height: auto;
+   aspect-ratio: 3 / 2;
+   display: block;
+}
+
+/* Règles globales sûres pour les images */
+img {
+   max-width: 100%;
+   height: auto;
+   display: inline-block;
+}
