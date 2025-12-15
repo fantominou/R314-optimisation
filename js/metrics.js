@@ -2,6 +2,7 @@
    Affiche FCP, LCP, CLS, TBT (~approx), #requêtes et poids total.
    N'emploie aucune dépendance externe. */
 (function(){
+  if (document.getElementById && document.getElementById('perf-panel')) return;
   const state = {
     fcp: null,
     lcp: null,
