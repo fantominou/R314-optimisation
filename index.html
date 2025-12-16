@@ -1,137 +1,123 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+<head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Site vitrine</title>
+  <title>Site vitrine - SlowSite</title>
+  <meta name="description" content="Site vitrine pour expérimenter la performance, tester et mesurer les optimisations.">
 
-  <!-- CSS locaux (OK en preload) -->
-  <link rel="preload" href="css/styles.min.css" as="style" onload="this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="css/styles.min.css"></noscript>
+  <!-- CSS principaux -->
+  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="css/extra-trim.css">
 
-  <link rel="preload" href="css/extra-trim.css" as="style" onload="this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="css/extra-trim.css"></noscript>
-
-  <!-- Google Fonts (PAS de preload) -->
+  <!-- Google Fonts (chargement standard, pas de preload) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
-  <body>
-    <!-- Header -->
-    <header class="topbar">
-      <div class="container nav">
-        <div class="logo"><h1>Slow<span>Site</span></h1></div>
-        <nav class="menu" aria-label="Navigation principale">
-          <a href="#galerie">Galerie</a>
-          <a href="#defis">Défis</a>
-          <a href="#apropos">À propos</a>
-        </nav>
+<body>
+  <!-- Header -->
+  <header class="topbar">
+    <div class="container nav">
+      <div class="logo"><h1>Slow<span>Site</span></h1></div>
+      <nav class="menu" aria-label="Navigation principale">
+        <a href="#galerie">Galerie</a>
+        <a href="#defis">Défis</a>
+        <a href="#apropos">À propos</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenu principal -->
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Un site pour expérimenter la performance</h2>
+          <p>Testez, mesurez et proposez des améliorations.</p>
+          <a class="cta" href="#defis">Voir les défis</a>
+        </div>
       </div>
-    </header>
+    </section>
 
-    <!-- Contenu principal -->
-    <main>
-      <!-- Hero -->
-      <section class="hero">
-        <div class="container hero-inner">
-          <div class="hero-text">
-            <h2>Un site pour expérimenter la performance</h2>
-            <p>Testez, mesurez et proposez des améliorations.</p>
-            <a class="cta" href="#defis">Voir les défis</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Galerie -->
-      <section id="galerie" class="section gallery" aria-label="Galerie d'images">
-        <div class="container">
-          <h2>Galerie</h2>
-          <div class="grid">
-            <div class="card">
-              <a href="img1.html"><img src="img/img1.webp" alt="Image 1" loading="lazy" width="600" height="400"/></a>
-            </div>
-            <div class="card">
-              <a href="img2.html"><img src="img/img2.webp" alt="Image 2" loading="lazy" width="600" height="400"/></a>
-            </div>
-            <div class="card">
-              <a href="img3.html"><img src="img/img3.webp" alt="Image 3" loading="lazy" width="600" height="400"/></a>
-            </div>
-            <div class="card">
-              <a href="img4.html"><img src="img/img4.webp" alt="Image 4" loading="lazy" width="600" height="400"/></a>
-            </div>
-            <div class="card">   
-              <a href="img5.html"><img src="img/img5.webp" alt="Image 5" loading="lazy" width="600" height="400"/></a>
-            </div>
-            <div class="card">
-              <a href="img6.html"><img src="img/img6.webp" alt="Image 6" loading="lazy" width="600" height="400"/></a>
-            </div>
-          </div>  
-        </div>
-      </section>
-
-      <!-- Fonctionnalités -->
-      <section id="apropos" class="section features" aria-label="Fonctionnalités du site">
-        <div class="container">
-          <h2>Fonctionnalités</h2>
-          <div class="features-grid">
-            <div class="feature">
-              <div class="icon" aria-hidden="true">⚡</div>
-              <h3>Design moderne</h3>
-              <p>Couleurs, ombres, grille responsive.</p>
-            </div>
-            <div class="feature">
-              <div class="icon" aria-hidden="true">🧱</div>
-              <h3>Scripts</h3>
-              <p>Intégration de scripts pour effets visuels.</p>
-            </div>
-            <div class="feature">
-              <div class="icon" aria-hidden="true">🖼️</div>
-              <h3>Images</h3>
-              <p>Galerie de visuels variés.</p>
-            </div>
-            <div class="feature">
-              <div class="icon" aria-hidden="true">🔠</div>
-              <h3>Polices</h3>
-              <p>Typographie soignée.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Défis -->
-      <section id="defis" class="section challenges" aria-label="Défis à relever">
-        <div class="container">
-          <h2>Défis</h2>
-          <ol>
-            <li>Analyser le comportement réseau et le rendu.</li>
-            <li>Identifier les ressources critiques.</li>
-            <li>Proposer des optimisations mesurables.</li>
-            <li>Comparer avant/après avec des outils de mesure.</li>
-            <li>Documenter la démarche.</li>
-          </ol>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- Galerie -->
+    <section id="galerie" class="section gallery" aria-label="Galerie d'images">
       <div class="container">
-        <p>TD Optimisation du temps de chargement d’un site web</p>
-        <p>© 2025 — BUT MMI Béziers - MAURIN N.</p>
+        <h2>Galerie</h2>
+        <div class="grid">
+          <div class="card"><a href="img1.html"><img src="img/img1.webp" alt="Image 1" loading="lazy" width="600" height="400"/></a></div>
+          <div class="card"><a href="img2.html"><img src="img/img2.webp" alt="Image 2" loading="lazy" width="600" height="400"/></a></div>
+          <div class="card"><a href="img3.html"><img src="img/img3.webp" alt="Image 3" loading="lazy" width="600" height="400"/></a></div>
+          <div class="card"><a href="img4.html"><img src="img/img4.webp" alt="Image 4" loading="lazy" width="600" height="400"/></a></div>
+          <div class="card"><a href="img5.html"><img src="img/img5.webp" alt="Image 5" loading="lazy" width="600" height="400"/></a></div>
+          <div class="card"><a href="img6.html"><img src="img/img6.webp" alt="Image 6" loading="lazy" width="600" height="400"/></a></div>
+        </div>
       </div>
-    </footer>
+    </section>
 
-    <!-- Scripts -->
-    <script src="js/app.min.js" defer></script>
-    <script>
-      window.addEventListener('load', () => {
-        const s = document.createElement('script');
-        s.src = 'js/metrics.min.js';
-        s.defer = true;
-        document.body.appendChild(s);
-      });
-    </script>
-  </body>
+    <!-- Fonctionnalités -->
+    <section id="apropos" class="section features" aria-label="Fonctionnalités du site">
+      <div class="container">
+        <h2>Fonctionnalités</h2>
+        <div class="features-grid">
+          <div class="feature">
+            <div class="icon" aria-hidden="true">⚡</div>
+            <h3>Design moderne</h3>
+            <p>Couleurs, ombres, grille responsive.</p>
+          </div>
+          <div class="feature">
+            <div class="icon" aria-hidden="true">🧱</div>
+            <h3>Scripts</h3>
+            <p>Intégration de scripts pour effets visuels.</p>
+          </div>
+          <div class="feature">
+            <div class="icon" aria-hidden="true">🖼️</div>
+            <h3>Images</h3>
+            <p>Galerie de visuels variés.</p>
+          </div>
+          <div class="feature">
+            <div class="icon" aria-hidden="true">🔠</div>
+            <h3>Polices</h3>
+            <p>Typographie soignée.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Défis -->
+    <section id="defis" class="section challenges" aria-label="Défis à relever">
+      <div class="container">
+        <h2>Défis</h2>
+        <ol>
+          <li>Analyser le comportement réseau et le rendu.</li>
+          <li>Identifier les ressources critiques.</li>
+          <li>Proposer des optimisations mesurables.</li>
+          <li>Comparer avant/après avec des outils de mesure.</li>
+          <li>Documenter la démarche.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>TD Optimisation du temps de chargement d’un site web</p>
+      <p>© 2025 — BUT MMI Béziers - MAURIN N.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/app.min.js" defer></script>
+  <script>
+    window.addEventListener('load', () => {
+      const s = document.createElement('script');
+      s.src = 'js/metrics.min.js';
+      s.defer = true;
+      document.body.appendChild(s);
+    });
+  </script>
+</body>
 </html>
