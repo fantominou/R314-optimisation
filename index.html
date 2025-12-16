@@ -1,32 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Site vitrine</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Site vitrine</title>
 
-    <!-- Préchargement CSS -->
-    <link rel="preload" href="css/styles.min.css" as="style" onload="this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="css/styles.min.css"></noscript>
+  <!-- CSS locaux (OK en preload) -->
+  <link rel="preload" href="css/styles.min.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/styles.min.css"></noscript>
 
-    <link rel="preload" href="css/extra-trim.css" as="style" onload="this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="css/extra-trim.css"></noscript>
+  <link rel="preload" href="css/extra-trim.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/extra-trim.css"></noscript>
 
-    <!-- Fonts Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Fonts (PAS de preload) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
 
-<link rel="preload" 
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" 
-      as="style" 
-      onload="this.rel='stylesheet'">
-
-<noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
-</noscript>
-  </head>
   <body>
     <!-- Header -->
     <header class="topbar">
